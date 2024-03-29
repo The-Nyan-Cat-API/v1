@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0; url=https://the-nyan-cat-api.github.io/v1/$(shuf -n 1 list.txt)>
