@@ -38,7 +38,7 @@ jobs:
       - name: FINAL Create a JSON with  a random Cat
         run: printf "$(cat file.txt)" | tee index.html2
       - name: DEBUG
-        run: cat index.html && echo $RANDOMCAT
+        run: cat index.html2 && echo $RANDOMCAT
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
