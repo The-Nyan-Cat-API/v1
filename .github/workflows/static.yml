@@ -37,6 +37,8 @@ jobs:
         run: RANDOMCAT=$(shuf -n 1 list.txt)
       - name: FINAL Create a JSON with  a random Cat
         run: printf "[{"id":"fa","url":"https://the-nyan-cat-api.github.io/v1/$RANDOMCAT","width":816,"height":612}]" > index.json
+      - name: DEBUG
+        run: cat index.json
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
