@@ -36,7 +36,7 @@ jobs:
       - name: Generate a variable one random Nyan Cat
         run: RANDOMCAT=$(shuf -n 1 list.txt)
       - name: FINAL Create a JSON with  a random Cat
-        run: echo [{"id":"fa","url":"$RANDOMCAT","width":816,"height":612}]
+        run: echo [{"id":"fa","url":"https://the-nyan-cat-api.github.io/v1/$RANDOMCAT","width":816,"height":612}] > index.html
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
